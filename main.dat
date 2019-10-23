@@ -177,7 +177,7 @@ RESULTS SIMULATOR IMEX 201710
 ** management stage                                                         --
 **----------------------------------------------------------------------------
 *DTMAX 15.0
- *INCLUDE './includes/recurrent/management/20220430-20460930.inc'
+**INCLUDE './includes/recurrent/management/20220430-20460930.inc'
 **INCLUDE './includes/recurrent/management/20220430-20301231.inc'
 **INCLUDE './includes/recurrent/management/20220430-20251231.inc'
 **INCLUDE './includes/recurrent/management/20220430-20231231.inc'
