@@ -23,7 +23,7 @@
 **----------------------------------------------------------------------------
 ** Controlling Contents of Output File                                      --
 **----------------------------------------------------------------------------
-*WPRN *WELL 0
+*WPRN *WELL *TIME
 *WPRN *GRID 0
 *WPRN *SECTOR 0
 *WPRN *ITER *NONE
@@ -46,7 +46,7 @@
 *XDR *ON
 *OUTSRF *RES *NONE
 *OUTSRF *WELL *LAYER *NONE
-*OUTSRF *GRID *SO *SW *SG *PRES *STRMLN
+*OUTSRF *GRID *SO *SW *SG *PRES *BPP *OILPOT *STRMLN
 *OUTSRF *FLUX-SECTOR *ALL *SC *SUM
 
 *OUTSRF *SPECIAL 'PRK014_Z1' *CRLGOR
