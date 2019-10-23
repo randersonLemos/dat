@@ -169,7 +169,7 @@ RESULTS SIMULATOR IMEX 201710
 ** From 2020 02 29 (TIME 1247) until 2022 03 31 (TIME 2008)                 --
 **----------------------------------------------------------------------------
 *DTMAX 1.0
-*INCLUDE './includes/recurrent/drilling/opening/20200229-20220331.inc'
+*INCLUDE './includes/recurrent/development/opening/20200229-20220331.inc'
 
 **----------------------------------------------------------------------------
 ** Field production - Opening Schedule and Management stage                 --
