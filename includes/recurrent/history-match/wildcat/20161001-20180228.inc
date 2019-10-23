@@ -1,3 +1,4 @@
+*WSRF *GRID *TNEXT
 *TARGET *STL 'Wildcat'
 2243.6
 

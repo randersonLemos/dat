@@ -123,20 +123,20 @@ RESULTS SIMULATOR IMEX 201710
 ** Wildcat well defined and history match performed                         --
 **----------------------------------------------------------------------------
 *INCLUDE './includes/recurrent/wells/wildcat.inc'
-*INCLUDE './includes/recurrent/hm/wildcat/20161001-20180228.inc'
+*INCLUDE './includes/recurrent/history-match/wildcat/20161001-20180228.inc'
 
 **----------------------------------------------------------------------------
 ** Period to set up exploitation strategy                                   --
 ** From 2018 03 01 (TIME 517) until 2020 02 28 (TIME 1246)                  --
 ** Nothing done. The time just passes.                                      --
 **----------------------------------------------------------------------------
-*INCLUDE './includes/recurrent/waiting/20180301-20200228.inc'
+*INCLUDE './includes/recurrent/development/drilling/20180301-20200228.inc'
 
 **----------------------------------------------------------------------------
 ** Production Unit                                                          --
 ** Groups, groups constraints, inguide approach, and available time         --
 **----------------------------------------------------------------------------
-*INCLUDE './includes/recurrent/facility/config.inc'
+*INCLUDE './includes/recurrent/facilities/config.inc'
 
 **----------------------------------------------------------------------------
 ** Producers (9 + Wildcat)                                                  --
@@ -169,7 +169,7 @@ RESULTS SIMULATOR IMEX 201710
 ** From 2020 02 29 (TIME 1247) until 2022 03 31 (TIME 2008)                 --
 **----------------------------------------------------------------------------
 *DTMAX 1.0
-*INCLUDE './includes/recurrent/opening/20200229-20220331.inc'
+*INCLUDE './includes/recurrent/development/opening/20200229-20220331.inc'
 
 **----------------------------------------------------------------------------
 ** Field production - Opening Schedule and Management stage                 --
@@ -177,7 +177,8 @@ RESULTS SIMULATOR IMEX 201710
 ** management stage                                                         --
 **----------------------------------------------------------------------------
 *DTMAX 15.0
-**INCLUDE './includes/recurrent/management/20220430-20460930.inc'
+ *INCLUDE './includes/recurrent/management/20220430-20460930.inc'
+**INCLUDE './includes/recurrent/management/20220430-20301231.inc'
 **INCLUDE './includes/recurrent/management/20220430-20251231.inc'
 **INCLUDE './includes/recurrent/management/20220430-20231231.inc'
 
