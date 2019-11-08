@@ -146,7 +146,7 @@ RESULTS SIMULATOR IMEX 201710
 *INCLUDE './wells/PRK045.inc'
 *INCLUDE './wells/PRK083.inc'
 *INCLUDE './wells/PRK060.inc'
-*INCLUDE './wells/PWILDC.inc'
+*INCLUDE './wells/Wildcat.inc'
 *INCLUDE './wells/PRK028.inc'
 *INCLUDE './wells/PRK061.inc'
 *INCLUDE './wells/PRK014.inc'
