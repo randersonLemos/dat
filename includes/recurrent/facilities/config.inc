@@ -6,17 +6,23 @@
 *GROUP 'INJECTION'  *ATTACHTO 'PLATFORM'
 
 *GCONP 'PRODUCTION'
-*MAX *STO   28617.7000 *CONT
-*MAX *STG 8000000.0000 *CONT
-*MAX *STW   19078.5000 *CONT
-*MAX *STL   28617.7000 *CONT
+*MAX *STO 28617.7 *CONT	**180000.0 bbl/day
+*MAX *STW 19078.5 *CONT	**120000.0 bbl/day
+*MAX *STL 28617.7 *CONT	**180000.0 bbl/day
+*GTARGET *STG 450000.0 ** Limited to the allowed burden amount
+** 	*MAX *STG 8000000.0 *CONT	
 
 *GCONI 'INJECTION'
-*MAX *STW   38157.0000 *CONT
-*MAX *STG 8000000.0000 *CONT
+*MAX *STW 38157.0 *CONT **240000.0 bbl
+** *MAX *STG 8000000.0 *CONT
 
-*GCONI 'PLATFORM'
-*RECYCLE GAS 1.0000
+*GCONI 'PLATFORM' 
+*RECYCLE GAS 1.0 ** All gas produced in reinjected
+
+** GROUP INJECTION RATES ADJUSTED SO AS TO MAINTAIN THE HYDROCARBON
+** VOLUME WEIGHTED AVERAGE PRESSURE AT 450 KGF/CM2
+*GCONI  'PLATFORM'
+*PMAINT *WATER *PMTARG 450.0
 
 **----------------------------------------------------------------------------
 ** INGUIDE                                                                  --
@@ -31,9 +37,10 @@
 **----------------------------------------------------------------------------
 ** Time Availability                                                        --
 **----------------------------------------------------------------------------
-*ON-TIME 'PLATFORM'
+*ON-TIME 'PLATFORM' ** PLATFORM EFFICIENCY
 1.0
-*ON-TIME 'PRODUCTION'
+*ON-TIME 'PRODUCTION' ** MANIFOLD EFFICIENCY
 0.91
-*ON-TIME 'INJECTION'
+*ON-TIME 'INJECTION' ** MANIFOLD EFFICIENCY
 0.91
+
